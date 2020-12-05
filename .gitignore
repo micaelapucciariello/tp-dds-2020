@@ -1,0 +1,9 @@
+.idea/
+*.iml
+*.iws
+ 
+log/
+target/
+
+app-db.*
+javacore.*

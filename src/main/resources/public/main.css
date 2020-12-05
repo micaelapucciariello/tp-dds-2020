@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    background: linear-gradient(0deg, #D8CEF6, white) fixed;
+}
+
+main {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 300;
+    display: flex;
+}
+
+h2 {
+    font-weight: 200;
+    display: flex;
+}
+
+h3 {
+    font-weight: 150;
+    display: flex;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    margin-top: 2em;
+    margin-down: 2em;
+}
+
+#formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#contenido {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 3px;
+    width: 90%;
+    max-width: 150px;
+    position: relative;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3f047a;
+    overflow: hidden;
+}
+
+.loginForm {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#categorias {
+    padding: 3px;
+}
+
+.menu a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+.entidad {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+.bandejaMensajes{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    max-width: 950px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.1);
+}
+
+.categoriasForm{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    max-width: 950px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.goBack{
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1);
+    width: 120px;
+    height: 30px;
+    background-color: #A9A9F5;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    padding: 3px 3px 3px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crear{
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1);
+    width: 120px;
+    height: 30px;
+    background-color: #A9A9F5;
+    text-align: center;
+    margin-left: auto;
+    font-family: Lato, sans-serif;
+    padding: 3px 3px 3px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    max-width: 950px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.1);
+}
+
+.centrado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

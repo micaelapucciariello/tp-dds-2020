@@ -1,0 +1,5 @@
+Para el JAR con dependencias tirar por consola:
+mvn clean package assembly:single
+
+Para correrlo, entrar al directorio target y correr con:
+java -jar GeSoc-1.0-SNAPSHOT-jar-with-dependencies.jar 

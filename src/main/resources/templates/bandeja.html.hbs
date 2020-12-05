@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="icon" type="image/png" href="/img/icono.png"/>
+</head>
+    {{# partial "titulo" }}
+        <title>Bandeja de mensajes</title>
+    {{/partial}}
+
+    <body>
+        {{# partial "contenido" }}
+            <main>
+                <section class="bandejaMensajes">
+                    <h2>Mensajes recibidos:</h2>
+                    {{#mensajes}}
+                        <li><a href="egresos/{{egresoRelacionado.id}}">Egreso {{egresoRelacionado.id}}</a>:  {{validez}}</li>
+                    {{/mensajes}}
+                </section>
+            </main>
+        {{/partial}}
+    </body>
+
+    {{> layout.html.hbs }}
+</html>
+

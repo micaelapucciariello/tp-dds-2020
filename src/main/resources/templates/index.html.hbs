@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="icon" type="image/png" href="/img/icono.png"/>
+</head>
+    {{# partial "titulo" }}
+        <title>Home</title>
+    {{/partial}}
+
+    <body>
+        {{# partial "contenido" }}
+            <main>
+                <section class="centrado">
+                    <h1 class="centrado">Quiénes somos?</h1>
+                    <p class="centrado"> GeSoc es un Sistema de Gestión que ayuda a organizaciones a llevar su contabilidad de manera simple y consistente.</p>
+                    <div><img src="/img/imagen.jpg" alt="GeSoc logo"></div>
+                </section>
+            </main>
+        {{/partial}}
+    </body>
+    {{> layout.html.hbs }}
+</html>
+

@@ -1,0 +1,41 @@
+<html>
+
+    {{# partial "titulo" }}
+        <title>Entidad</title>
+    {{/partial}}
+
+    {{# partial "contenido" }}
+        <main>
+            <section class="categoriasForm">
+
+                <h2>{{entidad.nombreFicticio}}{{entidad.razonSocial}}</h2>
+                <ul>
+                    <li>ID: {{entidad.id}}</li>
+                    <li>Categoría: {{entidad.categoria.nombre}}</li>
+                    <li>Tipo: {{entidad.name}}</li>
+                </ul>
+
+                <h3>Modificar categoría:</h3>
+                <form action="/entidades/{{entidad.id}}" method="POST">
+                    <select name="categoriaNueva" id="categorias">
+                        {{#categorias}}
+                            <option>{{nombre}}</option>
+                        {{/categorias}}
+                    </select>
+                    <input type="hidden" name="entidad" value={{entidad.id}} />
+                    <input type="submit" class="fadeIn fourth" value="Aplicar">
+                </form>
+
+                <br>
+                <h3>Gestionar egresos:</h3>
+                <form action="/entidades/{{entidad.id}}/egresos" method="GET">
+                    <input type="hidden" name="entidad" value={{entidad.id}} />
+                    <input type="submit" class="fadeIn fourth" value="Egresos">
+                </form>
+                </br>
+                <a class="goBack" href="/categorias/{{entidad.categoria.id}}">Volver atrás</a>
+            </section>
+        </main>
+    {{/partial}}
+    {{> layout.html.hbs }}
+</html>

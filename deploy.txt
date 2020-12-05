@@ -1,0 +1,2 @@
+mvn clean package assembly:single //crea el jar con dependencias
+mvn heroku:deploy -Dmaven.test.skip=true //deploy

@@ -1,0 +1,27 @@
+<html>
+
+    {{# partial "titulo" }}
+        <title>Egreso de entidad</title>
+    {{/partial}}
+
+    {{# partial "contenido" }}
+        <main>
+            <section class="categoriasForm">
+                Egresos de {{entidad.razonSocial}}{{entidad.nombreFicticio}}:
+                {{#egresos}}
+                    <lu>
+                        <li><a href="/egresos/{{id}}">Egreso {{id}}</a></li>
+                    </lu>
+                {{/egresos}}
+
+                <form action="/entidades/{{entidadId}}/egresos/nuevo" method="GET">
+                    <input type="hidden" name="entidad" value={{entidadId}} />
+                    <input type="submit" class="crear" value="Nuevo Egreso">
+                </form>
+                <a href="/entidades/{{entidadId}}" class="goBack">Volver atrás</a>
+            </section>
+        </main>
+    {{/partial}}
+
+    {{> layout.html.hbs }}
+</html>

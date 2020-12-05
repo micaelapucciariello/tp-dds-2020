@@ -1,0 +1,26 @@
+<html>
+    {{# partial "titulo" }}
+        <title>Entidades</title>
+    {{/partial}}
+
+    {{# partial "contenido" }}
+            <main>
+                <section class="categoriasForm">
+                    <h2>Seleccione una categoría:</h2>
+                    {{#categorias}}
+                        <li><a href="/categorias/{{id}}">{{nombre}}</a></li>
+                    {{/categorias}}
+                    <form action="/empresa" method="GET">
+                        <input type="submit" class="fadeIn fourth" value="Crear Empresa"></form>
+                    <form action="/osc" method="GET">
+                        <input type="submit" class="fadeIn fourth" value="Crear OSC">
+                    </form>
+                    <form action="/entidadBase" method="GET">
+                        <input type="submit" class="fadeIn fourth" value="Crear Entidad Base">
+                    </form>
+                </section>
+            </main>
+    {{/partial}}
+
+    {{> layout.html.hbs }}
+</html>

@@ -1,0 +1,46 @@
+<html>
+    {{# partial "titulo" }}
+        <title>Egresos</title>
+    {{/partial}}
+
+    {{# partial "contenido" }}
+        <main>
+            <section class="categoriasForm">
+                Datos del egreso:
+                </br>
+                </br>
+                <form action="/entidades/:id/egresos" method="POST">
+                    <label for="proveedor"><strong>Proveedor:</strong></label>
+                    <select name="proveedor" id="proveedor">
+                        {{#proveedores}}
+                            <option value="{{id}}">{{razonSocial}}</option>
+                        {{/proveedores}}
+                    </select>
+                    </br>
+                    <label for="pago"><strong>Medio de Pago:</strong></label>
+                    <select name="pago" id="pago">
+                        {{#mediosDePago}}
+                            <option value="{{id}}">{{name}}</option>
+                        {{/mediosDePago}}
+                    </select>
+                    </br>
+                    <strong>Numero de documento comercial</strong><input type="text" name="nro comercial" placeholder= "Numero de documento comercial">
+                    </br>
+                    <label for="tipo">Tipo de documento:</label>
+                    <select name="tipo" id="tipo">
+                        {{#each tiposDocumento}}
+                            <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+                    <input type="hidden" name="entidad" value="{{entidad}}">
+                    </br>
+                    <input type="submit" class="crear" value="Cargar egreso">
+                    <a href="/entidades/{{entidad}}/egresos" class="goBack">Volver atrás</a>
+                </form>
+            </section>
+        </main>
+
+    {{/partial}}
+
+    {{> layout.html.hbs }}
+</html>

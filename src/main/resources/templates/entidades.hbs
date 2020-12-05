@@ -1,0 +1,21 @@
+<html>
+    {{# partial "titulo" }}
+        <title>Categorias</title>
+    {{/partial}}
+
+    {{# partial "contenido" }}
+        <main>
+            <section class="categoriasForm">
+                <h2>Entidades {{categoria.nombre}}</h2>
+                <h3>Seleccione:</h3>
+                {{#entidades}}
+                    <li><a href="/entidades/{{id}}">{{nombreFicticio}}{{razonSocial}}</a></li>
+                {{/entidades}}
+
+                <p><a class="goBack" href="/categorias">Volver atrás</a></p>
+
+            </section>
+        </main>
+    {{/partial}}
+{{> layout.html.hbs }}
+</html>

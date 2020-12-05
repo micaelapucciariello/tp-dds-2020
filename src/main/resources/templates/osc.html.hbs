@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel="icon" type="image/png" href="/img/icono.png"/>
+</head>
+    {{# partial "titulo" }}
+        <title>OSC</title>
+    {{/partial}}
+
+    <body>
+    {{# partial "contenido" }}
+        <main>
+            <section class="categoriasForm">
+            <form action="/osc" method="POST">
+                <div>
+                    <h2 class="centrado">Crear nueva OSC</h2>
+                    <h3>Por favor ingrese los siguientes datos:</h3>
+                    </br>
+                </div>
+                Razon Social <input type="text" class="fadeIn second" name="RazonSocial" placeholder="Razon Social">
+                </br>
+                </br>
+                Cantidad de Egresos Aceptados<input type="number" class="fadeIn second" name="egresos" placeholder="Cantidad de Egresos Aceptados">
+                </br>
+                </br>
+                <label for="categoria">Seleccione categoría:</label>
+                <select name="categoria" id="categoria">
+                    {{#categorias}}
+                        <option value={{id}}>{{nombre}}</option>
+                    {{/categorias}}
+                </select>
+                </br>
+                </br>
+                <input type="submit" class="crear" value="Crear">
+                <a href="/categorias" class="goBack">Volver atrás</a>
+            </form>
+            </section>
+        </main>
+    {{/partial}}
+    </body>
+    {{> layout.html.hbs }}
+</html>
